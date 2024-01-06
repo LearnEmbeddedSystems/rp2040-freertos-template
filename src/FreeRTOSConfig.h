@@ -110,6 +110,10 @@
 #define configUSE_CORE_AFFINITY                 1
 #endif
 
+#if ( configNUMBER_OF_CORES > 1 )
+#define configUSE_MINIMAL_IDLE_HOOK             0
+#endif
+
 /* RP2040 specific */
 #define configSUPPORT_PICO_SYNC_INTEROP         1
 #define configSUPPORT_PICO_TIME_INTEROP         1
